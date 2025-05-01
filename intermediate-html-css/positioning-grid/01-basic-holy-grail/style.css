@@ -25,7 +25,7 @@ html {
 }
 
 .sidebar {
-  background-color: #005B94;
+  background-color: #005b94;
 }
 
 .nav {
@@ -33,7 +33,7 @@ html {
 }
 
 .article {
-  background-color: #7E1DC3;
+  background-color: #7e1dc3;
 }
 
 .footer {
@@ -45,4 +45,34 @@ html {
   font-family: sans-serif;
   color: white;
   text-align: left;
+}
+
+/* start grid layout */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.header {
+  grid-area: 1/1/1/4;
+}
+
+.sidebar {
+  grid-area: 2/1/6/2;
+}
+
+.nav {
+  grid-area: 2/2/3/4;
+}
+
+.article {
+  grid-area: 3/2/6/4;
+}
+
+.footer {
+  grid-area: 6/1/7/4;
 }
